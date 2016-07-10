@@ -1,4 +1,4 @@
-ls: cannot access /home/www/gitProject/releases: No such file or directory
+ls: cannot access /var/www/html/gitProject/releases: No such file or directory
 /usr/local/bin/composer
 $ git --version
 git --version
@@ -64,8 +64,49 @@ zip
 zlib
 [Zend Modules]
 Zend OPcache
-$ git clone "https://fundamentalMonitor:mediaplaner66@github.com/fundamentalMonitor/gitProject.git" "/home/www/gitProject/releases/20160710184536" --branch="master" --depth="1"
-git clone "https://fundamentalMonitor:mediaplaner66@github.com/fundamentalMonitor/gitProject.git" "/home/www/gitProject/releases/20160710184536" --branch="master" --depth="1"
-Cloning into '/home/www/gitProject/releases/20160710184536'...
-fatal: Remote branch master not found in upstream origin
-Unexpected end of command stream
+$ git clone "https://fundamentalMonitor:mediaplaner66@github.com/fundamentalMonitor/gitProject.git" "/var/www/html/gitProject/releases/20160710191328" --branch="master" --depth="1"
+git clone "https://fundamentalMonitor:mediaplaner66@github.com/fundamentalMonitor/gitProject.git" "/var/www/html/gitProject/releases/20160710191328" --branch="master" --depth="1"
+Cloning into '/var/www/html/gitProject/releases/20160710191328'...
+$ cd /var/www/html/gitProject/releases/20160710191328
+$ git submodule update --init --recursive
+cd /var/www/html/gitProject/releases/20160710191328
+git submodule update --init --recursive
+
+
+/usr/local/bin/composer
+
+
+
+$ cd /var/www/html/gitProject/releases/20160710191328
+$ chmod -R 755 /var/www/html/gitProject/releases/20160710191328/app/database/production.sqlite
+$ chmod -R g+s /var/www/html/gitProject/releases/20160710191328/app/database/production.sqlite
+$ chown -R www-data:www-data /var/www/html/gitProject/releases/20160710191328/app/database/production.sqlite
+cd /var/www/html/gitProject/releases/20160710191328
+chmod -R 755 /var/www/html/gitProject/releases/20160710191328/app/database/production.sqlite
+chmod -R g+s /var/www/html/gitProject/releases/20160710191328/app/database/production.sqlite
+chown -R www-data:www-data /var/www/html/gitProject/releases/20160710191328/app/database/production.sqlite
+chmod: cannot access ‘/var/www/html/gitProject/releases/20160710191328/app/database/production.sqlite’: No such file or directory
+$ cd /var/www/html/gitProject/releases/20160710191328
+$ chmod -R 755 /var/www/html/gitProject/releases/20160710191328/storage
+$ chmod -R g+s /var/www/html/gitProject/releases/20160710191328/storage
+$ chown -R www-data:www-data /var/www/html/gitProject/releases/20160710191328/storage
+cd /var/www/html/gitProject/releases/20160710191328
+chmod -R 755 /var/www/html/gitProject/releases/20160710191328/storage
+chmod -R g+s /var/www/html/gitProject/releases/20160710191328/storage
+chown -R www-data:www-data /var/www/html/gitProject/releases/20160710191328/storage
+chmod: cannot access ‘/var/www/html/gitProject/releases/20160710191328/storage’: No such file or directory
+$ cd /var/www/html/gitProject/releases/20160710191328
+$ chmod -R 755 /var/www/html/gitProject/releases/20160710191328/public
+$ chmod -R g+s /var/www/html/gitProject/releases/20160710191328/public
+$ chown -R www-data:www-data /var/www/html/gitProject/releases/20160710191328/public
+cd /var/www/html/gitProject/releases/20160710191328
+chmod -R 755 /var/www/html/gitProject/releases/20160710191328/public
+chmod -R g+s /var/www/html/gitProject/releases/20160710191328/public
+chown -R www-data:www-data /var/www/html/gitProject/releases/20160710191328/public
+chmod: cannot access ‘/var/www/html/gitProject/releases/20160710191328/public’: No such file or directory
+$ ln -s /var/www/html/gitProject/releases/20160710191328 /var/www/html/gitProject/current-temp
+$ mv -Tf /var/www/html/gitProject/current-temp /var/www/html/gitProject/current
+ln -s /var/www/html/gitProject/releases/20160710191328 /var/www/html/gitProject/current-temp
+mv -Tf /var/www/html/gitProject/current-temp /var/www/html/gitProject/current
+
+|=> No releases to prune from the server
