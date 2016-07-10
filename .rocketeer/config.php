@@ -37,7 +37,7 @@ return [
     // to track files with credentials : Rocketeer will prompt you for your credentials
     // and store them locally
     'connections'      => [
-        'production' => [
+        'dev' => [
             'host'      => '88.150.155.139',
             'username'  => 'sisco',
             'password'  => '',
@@ -46,6 +46,11 @@ return [
             'agent'     => '',
             'db_role'   => true,
         ],
+        '' => [
+            'host' => '88.150.155.132',
+            'username'  => 'sisco',
+            'password'  => '',
+        ]
     ],
 
     /*
