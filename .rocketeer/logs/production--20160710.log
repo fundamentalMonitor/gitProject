@@ -1,0 +1,71 @@
+ls: cannot access /home/www/gitProject/releases: No such file or directory
+/usr/local/bin/composer
+$ git --version
+git --version
+git version 1.9.1
+git version 1.9.1
+/usr/bin/php
+/usr/bin/php
+$ /usr/bin/php -m
+/usr/bin/php -m
+[PHP Modules]
+bcmath
+bz2
+calendar
+Core
+ctype
+curl
+date
+dba
+dom
+ereg
+exif
+fileinfo
+filter
+ftp
+gd
+gettext
+hash
+iconv
+json
+libxml
+mbstring
+mcrypt
+mhash
+mysql
+mysqli
+mysqlnd
+openssl
+pcntl
+pcre
+PDO
+pdo_mysql
+Phar
+posix
+readline
+Reflection
+session
+shmop
+SimpleXML
+soap
+sockets
+SPL
+standard
+sysvmsg
+sysvsem
+sysvshm
+tokenizer
+wddx
+xml
+xmlreader
+xmlwriter
+Zend OPcache
+zip
+zlib
+[Zend Modules]
+Zend OPcache
+$ git clone "https://fundamentalMonitor:mediaplaner66@github.com/fundamentalMonitor/gitProject.git" "/home/www/gitProject/releases/20160710184536" --branch="master" --depth="1"
+git clone "https://fundamentalMonitor:mediaplaner66@github.com/fundamentalMonitor/gitProject.git" "/home/www/gitProject/releases/20160710184536" --branch="master" --depth="1"
+Cloning into '/home/www/gitProject/releases/20160710184536'...
+fatal: Remote branch master not found in upstream origin
+Unexpected end of command stream
